@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MVVMBasic</string>
+    <string name="get_current_time">Get Current Time</string>
+    <string name="la_hora_actual_es">La hora actual es:</string>
+</resources>
