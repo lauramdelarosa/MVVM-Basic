@@ -2,7 +2,7 @@
 <layout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
->
+        xmlns:app="http://schemas.android.com/apk/res-auto">
     <data>
         <variable name="viewModel"
                   type="com.delarosa.mvvmbasic.viewModel.TimeViewModel"/>
@@ -11,6 +11,7 @@
             android:layout_width="match_parent"
             android:orientation="vertical"
             android:layout_height="match_parent"
+            tools:context=".view.TimeActivity"
            >
 
         <android.support.v7.widget.AppCompatButton android:layout_width="match_parent"
@@ -26,7 +27,7 @@
                   android:id="@+id/currentTimeTextView"
                   android:textColor="@color/colorPrimary"
                   android:background="@android:color/white"
-                  android:text="@{viewModel.currentTimeText}"
+                  android:text="@{viewModel.actualTime}"
                   android:layout_height="wrap_content"/>
 
     </LinearLayout>

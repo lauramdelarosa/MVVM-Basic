@@ -17,7 +17,7 @@ class TimeViewModel(val timeRepository: TimeRepository) : ViewModel() {
         actualTime.postValue(newTime)
     }
 
-    fun getDescription(date: TimeDto): String {
+    private fun getDescription(date: TimeDto): String {
         return date.id.toString() + " " + date.time
     }
 
